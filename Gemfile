@@ -11,13 +11,14 @@ gem 'turbolinks'
 gem 'uglifier'
 
 group :development, :test do
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara'
   gem 'selenium-webdriver'
 end
 
 group :development do
+  gem 'byebug', platforms: :mri
   gem 'listen'
+  gem 'meta_request'
   gem 'spring'
   gem 'spring-watcher-listen'
   gem 'web-console'
